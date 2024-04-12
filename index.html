@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web Básico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>El pringl, el pringl.. ra ra ras...</h1>
+    </header>
+<main>
+    <p>Este es un sitio web muy básico para entender las hojas de estilo.</p>
+    <a href="about.html"><button>Acerca de</button></a>
+    </main>
+    <footer>
+        <p>© 2024 Mi Sitio Web</p>
+    </footer>
+ <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+            document.getElementById("confirmation-message").style.display = "block"; // Mostrar el mensaje de confirmación
+            setTimeout(function() {
+                document.getElementById("confirmation-message").style.display = "none"; // Ocultar el mensaje después de 3 segundos
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
